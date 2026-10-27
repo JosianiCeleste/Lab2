@@ -11,9 +11,15 @@ public class Institution {
         }
         for (Lab l:labs)
         {
-            return true;
+            if(l.getName().equals(lab.getName()))
+            {
+                return false;
+            }
         }
+        labs.add(lab);
+        return true;
     }
+
     //region Getters e Setters
     public String getName() {
         return name;
