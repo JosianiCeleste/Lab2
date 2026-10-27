@@ -1,0 +1,4 @@
+public class Component {
+    private int id;
+    private String name;
+}
